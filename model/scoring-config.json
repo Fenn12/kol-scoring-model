@@ -1,0 +1,29 @@
+{
+  "_comment": "权重与阈值配置。改权重后必须在 reports/ 记录改因、结果与是否回滚。",
+  "weights": {
+    "D1_match": 0.30,
+    "D2_content": 0.25,
+    "D3_conversion": 0.30,
+    "D4_cost": 0.15
+  },
+  "sub_weights": {
+    "D1": { "audience_overlap": 0.45, "category_purity": 0.30, "scene_fit": 0.25 },
+    "D2": { "viral_rate": 0.35, "engagement_rate": 0.30, "comment_intent": 0.20, "post_stability": 0.15 },
+    "D3": { "cvr": 0.40, "uv_rate": 0.30, "aov_match": 0.20, "repurchase_rate": 0.10 },
+    "D4": { "cpm": 0.40, "quote_to_gmv": 0.40, "fulfill_rate": 0.20 }
+  },
+  "gates": {
+    "followers_min": 1000,
+    "followers_max": 500000,
+    "min_posts_30d": 4,
+    "max_quote": 30000
+  },
+  "tiers": {
+    "S": 80,
+    "A": 65,
+    "B": 50
+  },
+  "reversed_sub_metrics": ["cpm", "quote_to_gmv", "post_stability"],
+  "min_batch_size": 15,
+  "target_aov": 120
+}
