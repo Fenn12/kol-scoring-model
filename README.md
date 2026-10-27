@@ -2,6 +2,8 @@
 
 一个可解释、可调权、可复算的达人（KOL / KOC / 买手）筛选与分层模型。
 
+> **English abstract** — An interpretable, re-weightable scoring model for KOL/KOC selection. Four dimensions (audience match, content quality, conversion history, cost efficiency) are percentile-normalised within a batch, combined into a 0-100 score, then mapped to tiers with tier-specific actions rather than a flat ranking.
+
 > 脱敏自真实品牌达人投放项目。**不含任何真实达人信息、平台后台数据或公司投放策略**；仓库内 `data/sample_kols.csv` 为完全合成的样例数据，仅用于演示打分逻辑。
 
 ---
